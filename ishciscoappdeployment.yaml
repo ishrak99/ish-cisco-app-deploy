@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ishrakciscoapp
+  name: ishrakciscoapp
+  namespace: ishrakk8s1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ishrakciscoapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ishrakciscoapp
+    spec:
+      containers:
+      - image: dockerashu/ashufrontend:appv5
+        name: ashufrontend
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
