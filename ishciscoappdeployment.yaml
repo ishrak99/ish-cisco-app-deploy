@@ -19,8 +19,8 @@ spec:
         app: ishrakciscoapp
     spec:
       containers:
-      - image: dockerashu/ashufrontend:appv5
-        name: ashufrontend
+      - image: ishrak/ishfrontend
+        name: ishrakfrontend
         ports:
         - containerPort: 80
         resources: {}
