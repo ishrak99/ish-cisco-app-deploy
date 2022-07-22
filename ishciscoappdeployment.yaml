@@ -7,7 +7,7 @@ metadata:
   name: ishrakciscoapp
   namespace: ishrakk8s1
 spec:
-  replicas: 5 ## increasing from 1-3
+  replicas: 1
   selector:
     matchLabels:
       app: ishrakciscoapp
